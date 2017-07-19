@@ -1,4 +1,4 @@
-FROM resin/rpi-rasbian:jessie
+FROM resin/rpi-raspbian:jessie
 MAINTAINER Stefan Mueller <stmu@stmu.net>
 
 # ffmpeg install
