@@ -18,3 +18,4 @@ RUN mkdir -p /var/lib/motioneye
 EXPOSE 8765
 
 CMD ["meyectl", "startserver -c /path/to/motioneye/motioneye.conf"]
+
