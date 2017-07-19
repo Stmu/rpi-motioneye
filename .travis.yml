@@ -14,7 +14,7 @@ script:
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
     TAG=$(grep "ENV MYSQL_VERSION" Dockerfile | awk 'NF>1{print $NF}')
-    docker tag stmu/rpi-motioneye stmu/rpi-motioneye:$TAG
-    docker push stmu/rpi-motioneye:$TAG
+    docker tag stmu/rpi-motioneye stmu/rpi-motioneye:latest
+    docker push stmu/rpi-motioneye:latest
     docker push stmu/rpi-motioneye
   fi
