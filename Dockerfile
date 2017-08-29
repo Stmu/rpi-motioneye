@@ -21,5 +21,4 @@ VOLUME /var/lib/motioneye
 
 EXPOSE 8765
 
-CMD ["/usr/local/bin/meyectl", "startserver -c /etc/motioneye/motioneye.conf"]
-
+CMD ["/usr/local/bin/meyectl", "startserver",  "-c", "/etc/motioneye/motioneye.conf"]
