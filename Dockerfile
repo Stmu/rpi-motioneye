@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian:stretch
 MAINTAINER Stefan Mueller <stmu@stmu.net>
 
-RUN apt-get update && apt-get install -f build-essential python-pip python-dev curl libssl-dev libcurl4-openssl-dev libjpeg-dev libx264-148 libavcodec57 libavformat57 libswscale4 libpq5 wget libraspberrypi-bin
+RUN apt-get update && apt-get install -f build-essential python-pip python-dev curl libssl-dev libmariadbclient18 libcurl4-openssl-dev libjpeg-dev libx264-148 libavcodec57 libavformat57 libswscale4 libpq5 wget libraspberrypi-bin
 
 # ffmpeg install
 RUN wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
