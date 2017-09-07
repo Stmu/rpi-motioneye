@@ -24,4 +24,4 @@ VOLUME /var/lib/motioneye
 
 EXPOSE 8765
 
-CMD ["/usr/local/bin/python", "/motioneye/motioneye/motionctl.py", "startserver",  "-c", "/etc/motioneye/motioneye.conf"]
+CMD ["python", "/motioneye/motioneye/motionctl.py", "startserver",  "-c", "/etc/motioneye/motioneye.conf"]
