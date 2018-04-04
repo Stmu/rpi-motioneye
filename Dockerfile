@@ -22,9 +22,9 @@ RUN echo "bcm2835-v4l2" >> /etc/modules
 #RUN git clone https://github.com/ccrisan/motioneye.git 
 
 RUN pip install wheel
-RUN python -m pip install tornado
-RUN python -m pip install motioneye
-RUN python -m pip install Pillow
+RUN pip install tornado
+RUN pip install motioneye
+RUN pip install Pillow
 RUN pip install motioneye
 RUN mkdir -p /etc/motioneye
 RUN cp /usr/local/share/motioneye/extra/motioneye.conf.sample /etc/motioneye/motioneye.conf
