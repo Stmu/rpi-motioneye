@@ -1,14 +1,16 @@
 FROM resin/rpi-raspbian:stretch
 MAINTAINER Stefan Mueller <stmu@stmu.net>
 
-RUN apt-get update && apt-get install -f build-essential python-pip python-setuptools python-dev curl libssl-dev default-libmysqlclient-dev libcurl4-openssl-dev libjpeg-dev libx264-148 v4l-utils lsb-release libavcodec57 libavformat57 libswscale4 libpq5 wget libraspberrypi-bin git
+RUN apt-get update && apt-get install -f build-essential python-pip python-setuptools python-dev curl libssl-dev default-libmysqlclient-dev libmariadbclient18 libpq5 libcurl4-openssl-dev libjpeg-dev libx264-148 v4l-utils ffmpeg lsb-release libavcodec57 libavformat57 libswscale4 libpq5 wget libraspberrypi-bin git
 
 # ffmpeg install
-RUN wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
-RUN dpkg -i ffmpeg_3.1.1-1_armhf.deb
+#RUN wget https://github.com/ccrisan/motioneye/wiki/precompiled/ffmpeg_3.1.1-1_armhf.deb
+#RUN dpkg -i ffmpeg_3.1.1-1_armhf.deb
 
-RUN wget https://github.com/Motion-Project/motion/releases/download/release-4.0.1/pi_stretch_motion_4.0.1-1_armhf.deb
-RUN dpkg -i pi_stretch_motion_4.0.1-1_armhf.deb
+RUN wget https://github.com/Motion-Project/motion/releases/download/release-4.1.1/pi_stretch_motion_4.1.1-1_armhf.deb
+RUN dpkg -i pi_stretch_motion_4.1.1-1_armhf.deb
+#RUN wget https://github.com/Motion-Project/motion/releases/download/release-4.0.1/pi_stretch_motion_4.0.1-1_armhf.deb
+#RUN dpkg -i pi_stretch_motion_4.0.1-1_armhf.deb
 
 RUN echo "bcm2835-v4l2" >> /etc/modules
 
