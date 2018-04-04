@@ -4,7 +4,7 @@ MAINTAINER Stefan Mueller <stmu@stmu.net>
 RUN apt-get update && \
     apt-get install -f build-essential python curl \ 
     libmariadbclient18 libpq5 \
-    python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev \
+    python-pip python-dev libssl-dev libcurl4-openssl-dev libjpeg-dev python-setuptools \
     v4l-utils ffmpeg \
     wget libraspberrypi-bin git
 
