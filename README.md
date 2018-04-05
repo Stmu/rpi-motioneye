@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Stmu/rpi-motioneye.svg?branch=master)](https://travis-ci.org/Stmu/rpi-motioneye)
 
 
-# Prepare the raspberry host
+# Prepare the Raspberry Pi
 * install docker
 * Configure the Raspberry PI Camera Module 
   * connect the camera to the right port; the Raspberry PI has two identical ports for the camera module and for the touchscreen)
@@ -15,7 +15,7 @@
   * the command raspistill -o cam.jpg captures an image from the camera, without complaining
   * The special file /dev/video0 should be present when all of the above are met.
 
-# start motioneye with docker
+# Start motioneye with Docker
 * docker pull stmu/rpi-motioneye
 
 ```sh
