@@ -1,5 +1,5 @@
 FROM resin/rpi-raspbian:stretch
-MAINTAINER Stefan Mueller <stmu@stmu.net>
+MAINTAINER <stmu@stmu.net>
 
 RUN apt-get update && \
     apt-get install -f build-essential python curl \ 
