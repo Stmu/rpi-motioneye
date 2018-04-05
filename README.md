@@ -5,15 +5,13 @@
 
 # Prepare the raspberry host
 * install docker
-* Raspberry PI Camera Module Not Detected
-  * Make sure that:
-
-  * you have connected the camera to the right port; the Raspberry PI has two identical ports for the camera module and for the touchscreen)
+* Raspberry PI Camera Module 
+  * connected the camera to the right port; the Raspberry PI has two identical ports for the camera module and for the touchscreen)
   * the cable/ribbon/connector is properly connected and not damaged
-  * you have loaded the **bcm2835-v4l2** kernel module, by adding it to /etc/modules and rebooting afterwards
-  * you have enabled the camera using raspi-config
-  * you have allocated at least 128 MB of RAM to the GPU
-  * you are using a genuine camera module, not a "compatible" one
+  * load the **bcm2835-v4l2** kernel module, by adding it to /etc/modules and rebooting afterwards
+  * enable the camera using raspi-config
+  * allocate at least 128 MB of RAM to the GPU
+  * use a genuine camera module, not a "compatible" one
   * the command raspistill -o cam.jpg captures an image from the camera, without complaining
   * The special file /dev/video0 should be present when all of the above are met.
 
