@@ -5,8 +5,8 @@
 
 # Prepare the raspberry host
 * install docker
-* Raspberry PI Camera Module 
-  * connected the camera to the right port; the Raspberry PI has two identical ports for the camera module and for the touchscreen)
+* Configure the Raspberry PI Camera Module 
+  * connect the camera to the right port; the Raspberry PI has two identical ports for the camera module and for the touchscreen)
   * the cable/ribbon/connector is properly connected and not damaged
   * load the **bcm2835-v4l2** kernel module, by adding it to /etc/modules and rebooting afterwards
   * enable the camera using raspi-config
@@ -15,7 +15,7 @@
   * the command raspistill -o cam.jpg captures an image from the camera, without complaining
   * The special file /dev/video0 should be present when all of the above are met.
 
-# start motion eye with docker
+# start motioneye with docker
 * docker pull stmu/rpi-motioneye
 
 ```sh
