@@ -6,7 +6,6 @@
 # Prepare the Raspberry Pi
 * Install Docker
 * Configure the Raspberry PI Camera Module 
-  * Connect the camera to the right port; the Raspberry PI has two identical ports for the camera module and for the touchscreen)
   * Load the **bcm2835-v4l2** kernel module, by adding it to /etc/modules and rebooting afterwards
   * Enable the camera using raspi-config
   * Allocate at least 128 MB of RAM to the GPU
